@@ -1,0 +1,79 @@
+.section_contacts {
+    padding: 280px 0;
+    background: url('../images/sibscribe.jpg') center/cover no-repeat;
+    width: 100%;
+}
+
+.contacts_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.contact_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.form {
+    max-width: 730px;
+    margin: 33px auto 10px auto;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+     }
+}
+.form-input {
+    flex: 1 0 450px;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    width: 450px;
+    background: #FFFFFF;
+    border: 1px solid #D3DAD7;
+    color: $dark;
+    &::placeholder {
+        color: #94a690;
+
+    }
+    &:focus {
+        border: 1px solid $dark;
+    }
+
+    
+}
+.btn {
+    flex: 1 0 110px;
+    padding: 15px 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
+
+.contacts_text {
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}

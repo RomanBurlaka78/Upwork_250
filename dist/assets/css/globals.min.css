@@ -1,0 +1,124 @@
+.btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 1450px) {
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+.btn_outline {
+  background-color: #fff;
+}
+.btn_outline:hover {
+  background-color: #b41f1f;
+}
+.btn_primary {
+  color: white;
+  background-color: #03283C;
+  border: none;
+}
+.btn_primary:hover {
+  background-color: #05486d;
+}
+.btn_secondary {
+  background-color: #FF6200;
+  color: white;
+  border: none;
+}
+.btn_secondary:hover {
+  background-color: #ff8133;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: capitalize;
+  color: #03283C;
+}
+@media (max-width: 1450px) {
+  .section_title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 992px) {
+  .section_title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .section_title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .section_title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+.section_title_center {
+  text-align: center;
+}
+.section_title_secondary {
+  color: white;
+}
+.section_subtitle {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  margin-top: 15px;
+  letter-spacing: 0.3px;
+  color: black;
+}
+.section_subtitle_center {
+  text-align: center;
+}
+.section_subtitle_secondary {
+  color: white;
+}
+
+.section_vision {
+  position: relative;
+  background: #03283C;
+  padding: 80px 0 80px 0;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .section_vision {
+    padding: 70px 0 20px 0;
+  }
+}
+
+.btn_container {
+  margin-top: 15px;
+  display: flex;
+  flex: 1 0 50%;
+}

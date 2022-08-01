@@ -1,0 +1,52 @@
+@import "vendor/reset";
+@import "vars";
+@import "globals";
+@import "blocks/navbar";
+@import "blocks/hero";
+@import "blocks/statistic";
+@import "blocks/offers";
+@import "blocks/who";
+@import "blocks/what";
+@import "blocks/digital";
+@import "blocks/benefits";
+@import "blocks/ready";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    
+    @media (max-width:992px) {
+        max-width: 978px;
+        
+    }
+
+    @media (max-width:768px) {
+        max-width: 750px;
+        
+    }
+    
+    @media (max-width:348px) {
+        // max-width: none;
+        // padding: 0 10px;
+        
+    }
+}
+body {
+   
+    font-size: 21px;
+    color: white;
+    // background-color: $secondary;
+}
+
+
+
+// @import "blocks/navbar";
+// @import "vars";
+// @import "globals";
+// @import "vendor/reset";

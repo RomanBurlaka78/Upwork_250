@@ -1,0 +1,151 @@
+//btn
+
+.btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    @media(max-width:1450px) {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+   
+
+
+text-transform: uppercase;
+
+&_outline {
+    background-color: #fff;
+    &:hover {
+        background-color: darken(#c12121,  3%);
+        
+    }
+
+}
+&_primary {
+    color: white;
+    background-color:#03283C;
+    border: none;
+    &:hover {
+        background-color: lighten(#03283C, 10%);
+        
+    }
+
+}
+&_secondary {
+   background-color: #FF6200;
+    color: white;
+    border: none;
+    &:hover {
+        background-color: lighten(#FF6200, 10%);
+        
+    }
+
+}
+
+}
+
+//keyframes
+
+@keyframes fade {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+
+//section title
+
+.section {
+
+&_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: capitalize;
+    color: #03283C;
+    @media (max-width:1450px) {
+        font-size: 42px;
+    
+    }
+    @media (max-width:992px) {
+        font-size: 34px;
+    
+    }
+    @media (max-width:768px) {
+        font-size: 28px;
+    
+    }
+    @media (max-width:480px) {
+        font-size: 24px;
+        line-height: 120%;
+    
+    }
+
+
+    &_center {
+        text-align: center;
+    }
+    &_secondary {
+        color: white;
+      
+    }
+
+}
+&_subtitle {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+    margin-top: 15px;
+    // margin-bottom: 50px;
+    letter-spacing: 0.3px;
+    color: black;
+
+    &_center {
+        text-align: center;
+    }
+    &_secondary {
+        color: white;
+       
+    }
+
+}
+// &_subtitle-primary {
+
+// }
+
+}
+.section_vision {
+position: relative;
+background:#03283C;
+padding: 80px 0 80px 0;
+width: 100%;
+display: flex;
+z-index: 1;
+@media (max-width:768px) {
+    padding: 70px 0 20px 0;
+
+}
+}
+
+.btn_container {
+margin-top: 15px;
+display: flex;
+flex: 1 0 50%;
+}

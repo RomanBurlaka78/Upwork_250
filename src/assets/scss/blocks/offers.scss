@@ -1,0 +1,136 @@
+.section_offers{
+  
+    padding: 50px 10px;
+    
+}
+.offers {
+    max-width: 1320px;
+    margin: 10px auto;
+    padding: 0 auto;
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    // margin-top: 20px;
+    
+    
+   
+}
+.offers_item {
+    flex: 1 0 300px;
+       // margin-top: 30px;
+       border: 1px solid #E0E5E2;
+       max-width: 300px;
+       @media (max-width:1310px) {
+        margin: 0 auto;
+
+    }
+    @media (max-width:979px) {
+        margin: 0 auto;
+
+    }
+
+     
+      
+}
+
+.offer_img img:hover {
+    opacity: 0.7;
+
+    
+}
+
+.offer_body {
+    padding: 15px;
+}
+
+.offer_title {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 100%;
+    }
+}
+.offer_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 15px;
+}
+.offer_btn {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: center;
+    background:#D6EFFD;; 
+    padding: 6px;
+   
+    &:hover {
+        width: 100%; 
+        transition: .3s ease;
+       
+        .offer_btn-text {
+            display: block;
+        }
+        .offer_arrow {
+            transform: rotate(45deg);
+            transition: .3s transform;
+        }
+
+
+    }
+}
+.offer_btn {
+    text-decoration: none;
+}
+.offer_btn-text {
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-transform: capitalize;
+    color: #000000;
+    animation: fade .5s linear;
+
+}
+
+.offer_arrow {
+    transform: rotate(0deg);
+    transition: .3s transform;
+}
+
+
+.offers_bottom {
+    
+   
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin-top: 50px;
+ 
+
+}
