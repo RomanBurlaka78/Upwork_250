@@ -1,7 +1,8 @@
 @import "vendor/reset";
-@import "vars";
+// @import "vars";
 @import "globals";
-@import "blocks/navbar";
+@import "header";
+@import "footer";
 @import "blocks/hero";
 @import "blocks/statistic";
 @import "blocks/offers";
@@ -11,13 +12,33 @@
 @import "blocks/benefits";
 @import "blocks/ready";
 @import "blocks/contacts";
-@import "blocks/footer";
+
+// Colors
+$primary: #03283C;
+$secondary: grey;
+$warning :#FF6200;
+$white: white;
+$dark: black;
+
+// Breakpoints
+$breakpoint999: 999 + px;
+$breakpoint768: 768 + px;
+$breakpoint480: 480 + px;
+
+// Burger
+$burgerColor: black;
+$burgerActiveColor:white;
+
+//buttons
+// $btnSecondary: #FF6200;
+
 
 
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1420px;
+    padding: 0 20px;
     margin: 0 auto;
     
     
@@ -37,14 +58,27 @@
         
     }
 }
+.container__inner {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 body {
    
     font-size: 21px;
     color: white;
+    // overflow: hidden;
     // background-color: $secondary;
 }
 
-
+.burger.active .container {
+    overflow: hidden;
+    background-color: #FF6200;
+}
+.main {
+    overflow-x: hidden;
+}
 
 // @import "blocks/navbar";
 // @import "vars";

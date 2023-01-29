@@ -19,6 +19,12 @@
     padding: 10px 15px;
   }
 }
+@media (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
 .btn_outline {
   background-color: #fff;
 }
@@ -113,7 +119,7 @@
 }
 @media (max-width: 768px) {
   .section_vision {
-    padding: 70px 0 20px 0;
+    padding: 50px 0;
   }
 }
 
@@ -121,4 +127,19 @@
   margin-top: 15px;
   display: flex;
   flex: 1 0 50%;
+}
+
+.footer--footer {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 85px;
+  opacity: 0.5;
+  border-bottom: 1px solid #D3DAD7;
+  padding-bottom: 35px;
+}
+@media (max-width: 480px) {
+  .footer--footer {
+    gap: 25px;
+  }
 }

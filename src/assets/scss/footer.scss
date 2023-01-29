@@ -1,27 +1,23 @@
 footer {
     align-items: center;
     padding: 45px 10px 35px 10px;
-    background: $primary;
+    background: black;
    
 }
 
-.footer--footer {
+.footer {
+   
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 35px;
+    gap: 85px;
     opacity: 0.5;
     border-bottom: 1px solid #D3DAD7;
     padding-bottom: 35px;
-    @media(max-width: 480px) {
-        gap: 25px;
-    }
 
 }
 
-.footer_item {
+// .footer_item {
    
-}
+// }
 .footer_title {
     margin: 70px 0 20px 0;
     font-style: normal;
@@ -30,9 +26,9 @@ footer {
     line-height: 24px;
     color: #FFFFFF;
 }
-.footer_list {
+// .footer_list {
     
-}
+// }
 .footer_list_item {
      list-style: none;
      margin-top: 9px;
@@ -52,7 +48,7 @@ footer {
     transition: .3s color;
 
     &:hover {
-        color: $white;
+        color: white;
     }
 }
 
@@ -69,20 +65,20 @@ footer {
     
     
 }
-.copy  {
+// .copy  {
   
  
    
     
-}
+// }
 .copy_img {
     margin-right: 10px;
   
 }
-.copy_text {
+// .copy_text {
     
 
-}
+// }
 .social {
     // justify-content: flex-end;
     margin-left: 10px;

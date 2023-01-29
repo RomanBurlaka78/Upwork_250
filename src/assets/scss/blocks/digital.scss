@@ -100,3 +100,21 @@
     
 }
 
+.btn--ditial {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    @media(max-width:480px) {
+        padding: 10px;
+    }
+   
+}

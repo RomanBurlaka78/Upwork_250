@@ -396,6 +396,7 @@ textarea {
 .btn_primary {
     color: white;
     background-color: #03283C;
+    border: none;
 }
 
 .btn_primary:hover {
@@ -405,6 +406,11 @@ textarea {
 .btn_secondary {
     background-color: #FF6200;
     color: white;
+    border: none;
+}
+
+.btn_secondary:hover {
+    background-color: #ff8133;
 }
 
 @-webkit-keyframes fade {
@@ -501,7 +507,7 @@ textarea {
 
 @media (max-width: 768px) {
     .section_vision {
-        padding: 70px 0 20px 0;
+        padding: 50px 0;
     }
 }
 
@@ -626,7 +632,7 @@ textarea {
     margin: 0 auto;
 }
 
-.navbar_brand {
+.navbar__brand {
     padding: 1.3125rem 0;
     margin-left: 1.5rem;
     font-size: 1.25rem;
@@ -636,15 +642,17 @@ textarea {
 }
 
 @media (max-width: 1450px) {
-    .navbar_brand img {
+    .navbar__brand img {
         max-width: 150px;
         margin-right: 20px;
     }
 }
 
 @media (max-width: 1200px) {
-    .navbar_brand img {
+    .navbar__brand img {
         max-width: 130px;
+        position: absolute;
+        z-index: 1;
     }
 }
 
@@ -784,17 +792,18 @@ textarea {
 
     .burger.active .bar:nth-child(2) {
         opacity: 0;
-        color: #262626;
     }
 
     .burger.active .bar:nth-child(1) {
         -webkit-transform: translateY(8px) rotate(45deg);
         transform: translateY(8px) rotate(45deg);
+        background-color: #fff;
     }
 
     .burger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+        background-color: #fff;
     }
 
     .menu {
@@ -811,6 +820,7 @@ textarea {
         text-align: center;
         transition: 0.02s;
         overflow: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
     }
 }
 
@@ -835,6 +845,7 @@ textarea {
         overflow: hidden;
         width: 100vw;
         height: 100vh;
+        -webkit-transition: all 0.3s ease-in-out;
     }
 }
 
@@ -842,6 +853,88 @@ textarea {
     .menu_item {
         margin: 16px;
     }
+}
+
+.locked {
+    overflow: hidden;
+}
+
+footer {
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 45px 10px 35px 10px;
+    background: black;
+}
+
+.footer {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 85px;
+    opacity: 0.5;
+    border-bottom: 1px solid #D3DAD7;
+    padding-bottom: 35px;
+}
+
+.footer_title {
+    margin: 70px 0 20px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_list_item {
+    list-style: none;
+    margin-top: 9px;
+}
+
+.footer_list_last {
+    margin-top: 42px;
+}
+
+.footer_link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B0BDB7;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.footer_link:hover {
+    color: white;
+}
+
+.footer_bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 35px 0 30px;
+}
+
+@media (max-width: 768px) {
+    .footer_bottom {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+.copy_img {
+    margin-right: 10px;
+}
+
+.social {
+    margin-left: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    margin-right: 34px;
 }
 
 .hero_wrapper {
@@ -1062,7 +1155,7 @@ textarea {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
     }
 }
 
@@ -1090,6 +1183,20 @@ textarea {
     content: "";
 }
 
+@media (max-width: 992px) {
+    .statistic_item:nth-child(2)::after {
+        position: absolute;
+        content: "";
+        background: transparent;
+    }
+
+    .statistic_item:nth-child(2)::before {
+        position: absolute;
+        content: "";
+        background: transparent;
+    }
+}
+
 .statistic_item {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
@@ -1099,6 +1206,8 @@ textarea {
     .statistic_item {
         -ms-flex: 0 1 100%;
         flex: 0 1 100%;
+        border-bottom: 1px solid #181818;
+        padding-bottom: 20px;
     }
 }
 
@@ -1387,17 +1496,30 @@ textarea {
     overflow: hidden;
 }
 
+.what__inner {
+    padding: 0 20px;
+}
+
 .what_title {
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: block;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 59px;
+    line-height: 1.5;
     text-transform: capitalize;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+    .what_title {
+        font-size: 32px;
+        line-height: 1.5;
+    }
 }
 
 .what_subtitle {
@@ -1422,14 +1544,20 @@ textarea {
     margin-top: 63px;
 }
 
-.what_content {
-    -ms-flex: 0 1 380px;
-    flex: 0 1 380px;
+.what__content {
+    -ms-flex: 0 1 430px;
+    flex: 0 1 430px;
     border-top: 6px solid #FF6200;
-    background: #FFFFFF;
+    background: #fff;
 }
 
-.what_content h5 {
+@media (max-width: 440px) {
+    .what__content {
+        max-width: 300px;
+    }
+}
+
+.what__content h5 {
     display: block;
     font-style: normal;
     font-weight: 600;
@@ -1439,7 +1567,7 @@ textarea {
     margin: 38px 212px 8px 35px;
 }
 
-.what_content p {
+.what__content p {
     display: block;
     font-style: normal;
     font-weight: 300;
@@ -1670,6 +1798,8 @@ textarea {
 }
 
 .ready_subtitle {
+    -ms-flex: 1 0 300px;
+    flex: 1 0 300px;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1687,13 +1817,145 @@ textarea {
     margin: 50px auto 0;
     width: 450px;
     height: 52px;
-  /* Blues/90 */
     background: #03283C;
+}
+
+@media (max-width: 470px) {
+    .ready_button {
+        width: 250px;
+    }
+}
+
+.section_contacts {
+    padding: 280px 0;
+    width: 100%;
+    background: url("../../assets/images/sibscribe.jpg") center no-repeat;
+}
+
+.contacts__inner {
+    padding: 0 20px;
+}
+
+.contacts_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.contact_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.form__contact {
+    max-width: 730px;
+    margin: 33px auto 10px auto;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form__contact {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.form-input {
+    -ms-flex: 1 0 450px;
+    flex: 1 0 450px;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    max-width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D3DAD7;
+    color: black;
+}
+
+.form-input::-webkit-input-placeholder {
+    color: #94a690;
+}
+
+.form-input::-moz-placeholder {
+    color: #94a690;
+}
+
+.form-input:-ms-input-placeholder {
+    color: #94a690;
+}
+
+.form-input::-ms-input-placeholder {
+    color: #94a690;
+}
+
+.form-input::placeholder {
+    color: #94a690;
+}
+
+.form-input:focus {
+    border: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .form-input {
+        max-width: 250px;
+        margin-left: 10px;
+    }
+}
+
+.btn {
+    -ms-flex: 1 0 110px;
+    flex: 1 0 110px;
+    padding: 15px 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  /* identical to box height */
+    text-transform: uppercase;
+}
+
+.btn--contact {
+    margin: 0;
+}
+
+.contacts_text {
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 780px) {
+    .submit {
+        max-width: 250px;
+    }
 }
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1420px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -1709,7 +1971,23 @@ textarea {
     }
 }
 
+.container__inner {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 body {
     font-size: 21px;
     color: white;
+}
+
+.burger.active .container {
+    overflow: hidden;
+    background-color: #FF6200;
+}
+
+.main {
+    overflow-x: hidden;
 }

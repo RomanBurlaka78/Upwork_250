@@ -40,9 +40,10 @@
     margin: 50px  auto 0;
     width: 450px;
     height: 52px;
-
-    /* Blues/90 */
-
     background: #03283C;
+    @media(max-width:470px) {
+        width: 250px;
+
+    }
 
 }

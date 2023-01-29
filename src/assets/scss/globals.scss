@@ -17,6 +17,11 @@
         font-size: 14px;
         padding: 10px 15px;
     }
+    @media(max-width:480px) {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+   
 
    
 
@@ -139,7 +144,7 @@ width: 100%;
 display: flex;
 z-index: 1;
 @media (max-width:768px) {
-    padding: 70px 0 20px 0;
+    padding: 50px 0;
 
 }
 }
@@ -148,4 +153,19 @@ z-index: 1;
 margin-top: 15px;
 display: flex;
 flex: 1 0 50%;
+}
+
+
+.footer--footer {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 85px;
+    opacity: 0.5;
+    border-bottom: 1px solid #D3DAD7;
+    padding-bottom: 35px;
+    @media(max-width: 480px) {
+        gap: 25px;
+    }
+
 }
