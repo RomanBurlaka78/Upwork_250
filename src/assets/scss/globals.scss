@@ -11,8 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 1px;
     margin-right: 10px;
+    border-radius: 10px;
+ 
+
     @media(max-width:1450px) {
         font-size: 14px;
         padding: 10px 15px;
@@ -31,8 +34,10 @@ text-transform: uppercase;
 &_outline {
     background-color: #fff;
     &:hover {
-        background-color: darken(#c12121,  3%);
-        
+        &:hover {
+            background-color: lighten(#FF6200, 10%);
+            color: #fff;
+        }
     }
 
 }

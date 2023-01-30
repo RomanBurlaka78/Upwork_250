@@ -9,8 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 1px;
   margin-right: 10px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 @media (max-width: 1450px) {
@@ -28,8 +29,9 @@
 .btn_outline {
   background-color: #fff;
 }
-.btn_outline:hover {
-  background-color: #b41f1f;
+.btn_outline:hover:hover {
+  background-color: #ff8133;
+  color: #fff;
 }
 .btn_primary {
   color: white;

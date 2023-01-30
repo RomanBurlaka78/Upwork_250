@@ -385,6 +385,13 @@ textarea {
     }
 }
 
+@media (max-width: 480px) {
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
 .btn_outline {
     background-color: #fff;
 }
@@ -517,6 +524,25 @@ textarea {
     display: flex;
     -ms-flex: 1 0 50%;
     flex: 1 0 50%;
+}
+
+.footer--footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 85px;
+    opacity: 0.5;
+    border-bottom: 1px solid #D3DAD7;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 480px) {
+    .footer--footer {
+        gap: 25px;
+    }
 }
 
 .header {
@@ -1684,6 +1710,30 @@ footer {
     .digital_text h4 {
         font-size: 14px;
         line-height: 20px;
+    }
+}
+
+.btn--ditial {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    .btn--ditial {
+        padding: 10px;
     }
 }
 

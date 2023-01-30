@@ -352,8 +352,9 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 1px;
   margin-right: 10px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 @media (max-width: 1450px) {
@@ -371,8 +372,9 @@ textarea {
 .btn_outline {
   background-color: #fff;
 }
-.btn_outline:hover {
-  background-color: #b41f1f;
+.btn_outline:hover:hover {
+  background-color: #ff8133;
+  color: #fff;
 }
 .btn_primary {
   color: white;
@@ -490,7 +492,7 @@ textarea {
 .header {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   font-family: inherit;
 }
 @media (max-width: 992px) {
@@ -1500,8 +1502,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 15px 45px;
   margin-right: 10px;
+  border-radius: 10px;
+}
+.btn--ditial:hover {
+  background-color: black;
+  color: #FF6200;
 }
 @media (max-width: 480px) {
   .btn--ditial {
